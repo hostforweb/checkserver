@@ -1,5 +1,6 @@
 echo -e "\033[1;32m"
 hostname
+virt-what
 echo -e "\033[1;33m"
 echo "-------------------"
 top -b -d1 -n1| grep -i "Cpu(s)" | awk '{print "CPU:" $2 }' | head -n1
