@@ -17,6 +17,7 @@ mysqladmin processlist
 echo -e "\033[1;33m"
 echo "DISK USAGE"
 df -h -x tmpfs
+echo -e "\033[1;32m"
 echo "DISK IOwait"
 iotop -qbon1 | grep -vi "total\|actual\|command" | awk '{print $10" "$11" "$12}'| tail -6
 echo -e "\033[1;34m"
